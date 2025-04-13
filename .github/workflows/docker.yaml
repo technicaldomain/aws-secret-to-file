@@ -52,5 +52,5 @@ jobs:
           platforms: linux/amd64,linux/arm64
           push: true
           tags: |
-            ghcr.io/${{ github.event.org.login }}/${{ github.event.repository.name }}:latest
-            ghcr.io/${{ github.event.org.login }}/${{ github.event.repository.name }}:${{ needs.release.outputs.new_release_version }}
+            ghcr.io/${{ github.repository_owner }}/${{ github.event.repository.name }}:latest
+            ghcr.io/${{ github.repository_owner }}/${{ github.event.repository.name }}:${{ needs.release.outputs.new_release_version }}
